@@ -15,7 +15,7 @@ def test_make_single_prediction():
     # When
     subject = make_prediction(input_data=single_test_input)
 
-    print(subject.get('predictions')[0])
+    print(subject.get('predictions'))
     
 test_make_single_prediction()
 
@@ -29,6 +29,6 @@ def test_make_multiple_predictions():
     subject = make_prediction(input_data=multiple_test_input)
 
     # Then
-    print(subject.get('predictions')[0])
+    print(subject.get('predictions'))
 
 test_make_multiple_predictions()
